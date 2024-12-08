@@ -7,6 +7,7 @@ Tools:
 - Micro Center 64Gb SD Card 
 - SD Card Reader
 - External USB Hard Drive Seagate 1TB Expansion Portable Drive
+- Windows 11 Desktop
 
 Software:
 - Rasiberry Pi Imager
@@ -31,7 +32,22 @@ Step 1: Prep the SD card
   
 Step 2: Boot the Pie
 - Take your micro SD card out of the SD card reader and insert the micro SD card into your Raspberry Pi micro SD slot
-- Plug in the c type power supply cable into the Raspberry Pi
-- 
-![image](https://github.com/user-attachments/assets/c7366587-a413-4f11-ab6d-41e2865591e2)
+- Plug in the c type power supply cable and ethernet cable into the Raspberry Pi
+- Now you will need to go into your home router application and located the Raspberry Pi client and grab its IP address. My ISP is xFinity, I have logged into my xFinity application and capture my Pi's IP from the Wifi Settings.
+- Once you have the Raspberry Pi's IP address, open up command prompt and will SSH into the Pi.
+- From the command line type in ssh "The username you set"@"IP Address" it should look like the screen below.
+- ssh nado@xx.xx.xx.xx
+- It will prompt "Are you sure you want to continue connecting (yes/no/[fingerprint])?" Type in yes.
+- Run the ssh nado@xx.xx.xx.xx again and then enter your Raspberry Pi's password. Password was stored in 1Password.
+- We should now be the command line of the Raspberry Pi
+-![image](https://github.com/user-attachments/assets/d36c3f7e-75f1-40f3-883a-ea0d83110d00)
 
+Step 3: Update the Raspberry Pi
+- Run the update command update to make sure your Raspberry Pi is up to date. Run the command below, note that this will take a couple of minutes to complete.N
+- sudo apt update && sudo apt upgrade -y
+- ![image](https://github.com/user-attachments/assets/3f5fd125-d6d0-4b2a-8631-c67900cfef04)
+- The update will stop scrolling once the matrix stops scrolling
+
+Step 4: Install the NAS
+- Use this command below, this will download a script from GitHub and it will run the script with Bash. Note that this will take a couple minutes to complete. 
+- sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash
