@@ -27,8 +27,8 @@ Step 1: Prep the SD card
 - Now select "Edit Settings"
 - Enter the username and password for the account. I have used a random generated password and stored into my 1Password Password Manager.
 - Enter your SSID and SSID password (Highly Recommend to use ethernet for this project)
-- ![image](https://github.com/user-attachments/assets/61050d4e-7cf0-49b3-a096-ab202663e3ce)
-- 
+ ![image](https://github.com/user-attachments/assets/61050d4e-7cf0-49b3-a096-ab202663e3ce)
+  
 - Hit save then "Would you like to apply OS customiation settings?" Select Yes "Are you sure you want to continue?" Select Yes
 - This will take around 5-10 minutes to complete. Take a coffee break. Once completed you will get a screen like below
  ![image](https://github.com/user-attachments/assets/714338ea-f5f5-445e-8546-ebb8df94b462)
