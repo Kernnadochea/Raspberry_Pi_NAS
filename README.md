@@ -62,5 +62,24 @@ Step 4: Install the NAS
 - Use this command below, this will download a script from GitHub and it will run the script with Bash. Note that this will take a couple minutes to complete. 
 - sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash
 - The update will stop scrolling once the matrix stops scrolling
+- Note that there is a possibility that you could have been disconnected from the network when the installation was going on. Your IP address could have been changed, so make sure to verify from your router settings.
+- If the IP did get changed, just SSH into the machine again with the new IP Address
+- OpenMediaVault is now installed
 
+Step 5: Configuure OpenMediaVault
+- Launch your favorite web browser and launch the paste Raspberry Pi's IP address into the URL
+- It will direct you to openmediavault GUI, here you will need to enter the default username and password
+- Default Username: admin
+- Default Password: openmediavault
+
+  ![image](https://github.com/user-attachments/assets/3578e7c0-cde3-4bd0-bb68-aa8176088389)
+  
+- First thing you would want to do is change the default dmin password immediately
+- On the top right hand side, select the user icon and select "Change Password" and enter the new password. Here I will generate a random password from 1Password and save.
+- Once completed, now plug in the external USB harddrive into the Raspberry Pi via USB
+- On the left hand side, select the "Storage" drop-down and select "Disks". From here we should be able to see the external harddrive we plugged in. You should see one is your Micro SD card and the other is the drive.
+  
+  ![image](https://github.com/user-attachments/assets/d75bd23d-04d8-4157-996e-580662ab2697)
+
+- Select the external harddrive and perform a quick wipe just to ensure its fresh and clean
 - 
