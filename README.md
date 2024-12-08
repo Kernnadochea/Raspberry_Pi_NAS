@@ -61,3 +61,6 @@ Step 3: Update the Raspberry Pi
 Step 4: Install the NAS
 - Use this command below, this will download a script from GitHub and it will run the script with Bash. Note that this will take a couple minutes to complete. 
 - sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash
+- The update will stop scrolling once the matrix stops scrolling
+
+- 
