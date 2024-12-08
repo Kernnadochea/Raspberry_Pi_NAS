@@ -81,5 +81,33 @@ Step 5: Configuure OpenMediaVault
   
   ![image](https://github.com/user-attachments/assets/d75bd23d-04d8-4157-996e-580662ab2697)
 
-- Select the external harddrive and perform a quick wipe just to ensure its fresh and clean
-- 
+- Select the external hard drive and perform a quick wipe just to ensure its fresh and clean
+- Now under the "Storage" drop-down select File Systems. Select for hard drive for mount. If you do not see your drive then selecxt "create and mount a file system"
+- Choose EXT4 and continue. This will take a couple minutes to complete
+- You will now see Pending configuration changes above, apply those changes
+  
+  ![image](https://github.com/user-attachments/assets/32d583cb-fbc5-481e-b617-c8eb9ee57b26)
+
+  Step 6: Create a shared folder
+  - Under the "Storage" drop-down select "Shared Folder" and select "Create" icon.
+  - Give the folder a name and select the drive.
+ 
+  ![image](https://github.com/user-attachments/assets/e7b5f3dd-35fa-42dd-8769-6860879c7cd3)
+
+  - Pending configuration changes message, select apply
+  - Still under the "Shared Folder" tab, we want to select the drive and then select permissions
+  - Give your user and group "Read/Write" permissions
+  
+  ![image](https://github.com/user-attachments/assets/a6100181-b699-4072-b3d4-87cf1e3b8ef0)
+
+   - Pending configuration changes message, select apply
+ 
+  Step 7: Configuring NFS and SMB Shared
+  - Note that enableing NFS will allows access from Linux and MAC machines. SMB will allow Windows machine access
+  - On the left hand side, select the drop-down "Services" amd select "SMB/CIFS"
+  - Select settings and then check on "Enabled" and save.
+  - Under SMB/CIFS, select "Shares"
+  - Then select "Create" and then select your Shared folder and save
+  - Now do the same thing for the NFS settings.
+  - Apply the pending configurations
+  - 
