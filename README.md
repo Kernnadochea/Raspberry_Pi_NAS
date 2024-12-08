@@ -10,6 +10,7 @@ Tools:
 
 Software:
 - Rasiberry Pi Imager
+- 1Password
 
 Steps: Prep the SD card
 - Insert the SD Card into the SD card reader then plug it into the computer
@@ -18,4 +19,9 @@ Steps: Prep the SD card
 - Choose Device, select your Raspiberry Pi Device from the drop-down, for this case we will be selecting Raspiberry Pi 4
 - Choose OS, scroll down to "Raspberry Pi OS (other) then select "Raspiberry Pi OS Lite (64-bits) Note that there will be no Desktop and GUIs, all you will have is a command line
 - Select the appriporate SD card, then hit next
-- 
+- ![image](https://github.com/user-attachments/assets/0fa742c8-8a38-4dc7-8371-34e2cd675105)
+- Now select "Edit Settings"
+- Enter the username and password for the account. I have used a random generated password and stored into my 1Password Password Manager.
+- Enter your SSID and SSID password
+- ![image](https://github.com/user-attachments/assets/61050d4e-7cf0-49b3-a096-ab202663e3ce)
+
