@@ -130,7 +130,36 @@ Step 5: Configuure OpenMediaVault
    
     ![image](https://github.com/user-attachments/assets/1ea6ba9c-9122-4a04-ad4f-55bfcccc97f2)
 
+Step 9: Install Plex Media Server
+- ssh into the Raspberry Pi via command line
+- Enter the command [sudo apt-get install apt-transport-https] and hit enter
+- Now we want to add the Plex repositories from our Raspberry Pi and download Plex
+- First we are going to verify the keys
+- Enter the command [curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -]
+- The next command will add the Plex respository to our lst of respository
+- [echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list]
+- With the new respository added we need to update list of available packages
+- [sudo apt-get update]
+- Run the following command once update is completed
+- [sudo apt install plexmediaserver]
 
-    
+  ![image](https://github.com/user-attachments/assets/bbbd8006-4f41-4613-8908-8b839051986d)
+
+  - Installation Successful
+ 
+  Step 10: Access Plex
+  - In a web browser enter in the URL, replace this IP address with the IP address of your Raspiberry Pi [http://10.10.10.10:32400/web]
+  - You will need to login into Plex, create a free Plex if you don't have one. You don't neeed to sign up for premium
+  - In the Server Setup, enter a name for your server use lower case letter and uncheck "Allow me to ccess my media outside my house" then hit next
+  - 
+
+![image](https://github.com/user-attachments/assets/ac2367a5-deaa-4bdc-bee5-64b3e1ddb4d9)
+
+- From here you can start adding your libray
+- Download the Plex app on your phone and sign in. You should now be able to view those libray you configured
+- 
+
+
+
 
 
