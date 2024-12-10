@@ -1,4 +1,5 @@
 Raspberry Pi NAS
+Credit to NetworkChuck https://academy.networkchuck.com/products/raspberry-pi-projects/categories/2152873424/posts/2167703562
 
 Tools:
 - Raspberry Pi 4 Model B
@@ -157,7 +158,7 @@ Step 9: Install Plex Media Server
 
 - From here you can start adding your libray
 - Download the Plex app on your phone and sign in. You should now be able to view those libray you configured
-- 
+ 
 
 
 
