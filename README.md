@@ -1,0 +1,1 @@
+This guide will help you set up a Network Attached Storage (NAS) server using a Raspberry Pi 4 and an external storage drive. This setup will allow you to store and access your files remotely over your network.
