@@ -110,4 +110,24 @@ Step 5: Configuure OpenMediaVault
   - Then select "Create" and then select your Shared folder and save
   - Now do the same thing for the NFS settings.
   - Apply the pending configurations
-  - 
+ 
+  Step 8: Set Up Network
+  - On the left hand side select "Users" and select the "Users" drop-down.
+  - Select the username and click edit
+
+  ![image](https://github.com/user-attachments/assets/406694e2-9c63-4a64-9787-133a2d57d1bc)
+
+  - Enter the Raspberry Pi's password and confirm the password, then hit save.
+  - Apply the pending configurations
+  - On your Windows machine, open up file explorer and click "This PC"
+  - Under the Devices and drives, right click your mouse and select "Add a network location"
+  - On the Network location wizard click "Next", "Choose a custom network location", here you will enter the Raspbery PI's IP address like the following
+  - "//10.10.10.10/Cloud_Storage"
+  - Next, you will get a pop up to enter your Raspberry Pi username and password. Once you enter that it should be mapped in File Explorer
+    ![image](https://github.com/user-attachments/assets/6c364b56-b5a7-4817-9437-8ba70e6dcf21)
+    ![image](https://github.com/user-attachments/assets/1ea6ba9c-9122-4a04-ad4f-55bfcccc97f2)
+
+
+    
+
+
