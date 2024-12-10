@@ -90,13 +90,13 @@ Step 5: Configuure OpenMediaVault
 
   Step 6: Create a shared folder
   - Under the "Storage" drop-down select "Shared Folder" and select "Create" icon.
-  - Give the folder a name and select the drive.
+  - Give the folder a name and select the drive. Create one for SMB and one for NFS.
  
   ![image](https://github.com/user-attachments/assets/e7b5f3dd-35fa-42dd-8769-6860879c7cd3)
 
   - Pending configuration changes message, select apply
   - Still under the "Shared Folder" tab, we want to select the drive and then select permissions
-  - Give your user and group "Read/Write" permissions
+  - Give your group "Read/Write" permissions
   
   ![image](https://github.com/user-attachments/assets/a6100181-b699-4072-b3d4-87cf1e3b8ef0)
 
@@ -123,8 +123,11 @@ Step 5: Configuure OpenMediaVault
   - Under the Devices and drives, right click your mouse and select "Add a network location"
   - On the Network location wizard click "Next", "Choose a custom network location", here you will enter the Raspbery PI's IP address like the following
   - "//10.10.10.10/Cloud_Storage"
+    
+  ![image](https://github.com/user-attachments/assets/6c364b56-b5a7-4817-9437-8ba70e6dcf21)
+    
   - Next, you will get a pop up to enter your Raspberry Pi username and password. Once you enter that it should be mapped in File Explorer
-    ![image](https://github.com/user-attachments/assets/6c364b56-b5a7-4817-9437-8ba70e6dcf21)
+   
     ![image](https://github.com/user-attachments/assets/1ea6ba9c-9122-4a04-ad4f-55bfcccc97f2)
 
 
