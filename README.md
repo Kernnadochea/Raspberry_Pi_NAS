@@ -1,1 +1,1 @@
-This guide will help you set up a Network Attached Storage (NAS) server using a Raspberry Pi 4 and an external storage drive. This setup will allow you to store and access your files remotely over your network.
+This guide walks you through setting up a Network Attached Storage (NAS) using a Raspberry Pi 4 Model B and OpenMediaVault software. A NAS allows you to centrally store your files and access them from any device on your network.
