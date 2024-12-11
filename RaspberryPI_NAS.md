@@ -111,11 +111,15 @@ Create Shared Folders:
 - Give each folder a name and select the desired drive.
 - Apply the pending configuration changes.
 
+  ![image](https://github.com/user-attachments/assets/14c951a2-2518-44fe-8cbf-1c29d36384d7)
+
 Set Permissions:
 - For both SMB and NFS shared folders:
 - Select the folder and then click "Permissions."
 - Give your group "Read/Write" permissions.
 - Apply the pending configuration changes.
+
+  ![image](https://github.com/user-attachments/assets/78cebb58-121c-4f40-88a2-62cda834d59a)
 
 Step 9: Configure NFS and SMB Sharing
 Enable SMB/CIFS:
@@ -124,10 +128,14 @@ Enable SMB/CIFS:
 - Under "Settings," enable SMB/CIFS.
 - Save the changes.
 
+  ![image](https://github.com/user-attachments/assets/58e50ec7-b907-4621-bbfc-e56c1299478b)
+
 Create SMB Share:
 - Go to the "Shares" tab under "SMB/CIFS."
 - Click "Create."
 - Select your SMB shared folder and save.
+
+  ![image](https://github.com/user-attachments/assets/401ab4ba-3651-49f9-9b77-c7300ffc89d7)
 
 Enable NFS:
 - Go to the "Services" section.
@@ -135,10 +143,14 @@ Enable NFS:
 - Under "Settings," enable NFS.
 - Save the changes.
 
+![image](https://github.com/user-attachments/assets/29f48c2a-5d5e-4e4b-85d5-fbe39fb3795b)
+
 Create NFS Share:
 - Go to the "Shares" tab under "NFS."
 - Click "Create."
 - Select your NFS shared folder and save.
+
+ ![image](https://github.com/user-attachments/assets/97120ff4-fd65-4d81-8117-f24c1817cbf0)
 
 Step 10: Set Up Network Access
 Configure User Access:
@@ -147,6 +159,8 @@ Configure User Access:
 - Enter and confirm your Raspberry Pi's password.
 - Save the changes and apply any pending configurations.
 
+  ![image](https://github.com/user-attachments/assets/dbbd6a20-fc00-4d55-85c1-4bfa5bd08200)
+
 Map Network Drive:
 - On your Windows computer, open File Explorer.
 - Right-click on "This PC" and select "Add a network location."
@@ -154,6 +168,9 @@ Map Network Drive:
   - Choose "Next."
   - Select "Choose a custom network location."
   - Enter your Raspberry Pi's IP address in the following format: `\\10.10.10.10\Cloud_Storage` (replace the IP with your actual Raspberry Pi's IP).
+ 
+    ![image](https://github.com/user-attachments/assets/007c9fa9-873b-4007-abb6-51d07b145f35)
+
 - When prompted, enter your Raspberry Pi username and password.
 - Your Raspberry Pi's storage should now appear in File Explorer.
 
@@ -180,6 +197,8 @@ Update the package lists1 again:
 
 Install Plex Media Server:
 - `sudo apt-get install plexmediaserver`
+
+  ![image](https://github.com/user-attachments/assets/941b2177-c969-4703-95e8-da587088afbf)
 
 Step 12: Access Plex
 
