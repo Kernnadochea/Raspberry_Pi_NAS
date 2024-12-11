@@ -53,7 +53,7 @@ Note: This option provides a command-line interface only. There will be no deskt
 
 - Open a command prompt window on your computer.
 - Type the following command, replacing username with your chosen username and ip_address with your Raspberry Pi's IP address:
-- ssh username@ip_address
+- `ssh username@ip_address`
 - You will be prompted to confirm the connection. Type "yes" and press enter.
 - Enter your Raspberry Pi password when prompted.
   
@@ -62,7 +62,7 @@ Note: This option provides a command-line interface only. There will be no deskt
 4. Updating the Raspberry Pi:
 
 - Run the following command to update your Raspberry Pi's software:
-- sudo apt update && sudo apt upgrade -y
+- `sudo apt update && sudo apt upgrade -y`
 - This process may take a few minutes.
 
    ![image](https://github.com/user-attachments/assets/3f5fd125-d6d0-4b2a-8631-c67900cfef04)
@@ -70,7 +70,7 @@ Note: This option provides a command-line interface only. There will be no deskt
 5. Installing OpenMediaVault:
 
 - Use the following command to download and install the OpenMediaVault script from GitHub:
-- sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash
+- `sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developers/installScript/master/install | sudo bash`
 - The installation may take a few minutes.
 Note: Your Raspberry Pi's IP address might change after installation. Verify the new IP address in your router settings if needed.
 
@@ -79,8 +79,8 @@ Note: Your Raspberry Pi's IP address might change after installation. Verify the
 - Open a web browser and enter your Raspberry Pi's IP address in the address bar.
 - You will be directed to the OpenMediaVault web interface.
 - Log in using the default credentials:
-- Username: admin
-- Password: openmediavault
+- `Username: admin`
+- `Password: openmediavault`
 
   ![image](https://github.com/user-attachments/assets/3578e7c0-cde3-4bd0-bb68-aa8176088389)
   
@@ -153,7 +153,7 @@ Map Network Drive:
 - In the Network Location Wizard:
   - Choose "Next."
   - Select "Choose a custom network location."
-  - Enter your Raspberry Pi's IP address in the following format: \\10.10.10.10\Cloud_Storage (replace the IP with your actual Raspberry Pi's IP).
+  - Enter your Raspberry Pi's IP address in the following format: `\\10.10.10.10\Cloud_Storage` (replace the IP with your actual Raspberry Pi's IP).
 - When prompted, enter your Raspberry Pi username and password.
 - Your Raspberry Pi's storage should now appear in File Explorer.
 
@@ -164,27 +164,27 @@ SSH into Raspberry Pi:
 
 Add Plex Repository:
 - Update the package lists:
-- sudo apt-get update
+- `sudo apt-get update`
 
 Install the apt-transport-https package:
-- sudo apt-get install apt-transport-https
+- `sudo apt-get install apt-transport-https`
 
 Add the Plex signing key:
-- curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+- `curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -`
 
 Add the Plex repository:
-- echo "deb https://downloads.plex.tv/repo/deb public main" | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+- `echo "deb https://downloads.plex.tv/repo/deb public main" | sudo tee /etc/apt/sources.list.d/plexmediaserver.list`
 
 Update the package lists1 again:
-- sudo apt-get update
+- `sudo apt-get update`
 
 Install Plex Media Server:
-- sudo apt-get install plexmediaserver
+- `sudo apt-get install plexmediaserver`
 
 Step 12: Access Plex
 
 - Open Web Browser:
- - Enter your Raspberry Pi's IP address followed by the port number in your web browser: http://10.10.10.10:32400/web (replace the IP with your actual Raspberry Pi's IP).
+ - Enter your Raspberry Pi's IP address followed by the port number in your web browser: `http://10.10.10.10:32400/web` (replace the IP with your actual Raspberry Pi's IP).
  
 - Sign In or Create Account:
  - Sign in to your existing Plex account or create a free account.
